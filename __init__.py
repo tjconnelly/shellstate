@@ -8,7 +8,7 @@ except AssertionError:
   sys.exit('EXIT: i require python3')
 
 # {{{
-class SessionState:
+class ShellState:
   def __init__(self,statefile):
     self.statefile = statefile
     self.state = self.readstate()
