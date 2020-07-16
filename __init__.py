@@ -12,6 +12,7 @@ class ShellState:
   def __init__(self,statefile):
     self.statefile = statefile
     self.state = self.readstate()
+    sys.setrecursionlimit(3000)
 
     if self.state is None:
       self.log = {}
